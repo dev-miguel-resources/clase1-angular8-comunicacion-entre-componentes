@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo';
+  x = 'freezer!';
+  rpta: number = 0;
+
+  recibirResultado(e: any) {
+    this.rpta = e;
+  }
 }
